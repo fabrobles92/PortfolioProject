@@ -1,0 +1,78 @@
+.LinkCard {
+    text-decoration: none;
+}
+
+.Card{
+    display: flex;
+    flex-flow: row;
+    border: solid 0.1px #eee;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    min-width: 10rem;
+    align-items: center;
+}
+
+.Card:hover{
+    background-color: #353d46;;
+}
+
+.Card img {
+    width: 25%;
+}
+
+
+.CardBody {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.CardBody a{
+    font-size: 2.5em;
+    color: orange;
+    border: none;
+    border-top: 1px solid #aaa;;
+    background: transparent;
+    text-decoration: none;
+    width: 50%;
+    /* margin-top: auto; */
+
+}
+
+.CardBody text{
+    color: orange;
+    font-size: 2.4rem;
+    margin-bottom: 4px;
+
+}
+
+.CardBody h2{
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Card img{width: 25%;}
+    .CardBody text{font-size: 2.2rem;}
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .Card img{width: 35%;}
+    .CardBody text{font-size: 1.9rem;}
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .Card img{width: 100%;}
+    .Card{flex-flow: column;}
+    .CardBody text{font-size: 1.7rem;}
+}
+

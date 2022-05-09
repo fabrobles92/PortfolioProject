@@ -1,0 +1,118 @@
+/* .Titles {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+.Picture {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    
+} */
+
+.LayoutLanding {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    /* color: #3a4145; */
+    color: white;
+    font-family: serif;
+    font-size: 6.5em;
+    font-weight: 500;
+    width: 100%;
+    animation: reveal 7s initial;
+    animation-iteration-count: 1;
+    margin: 0 0 2px 0 ;
+    
+}
+
+/* h2 {
+    color: #aaa;
+    font-size: 3.2em;
+    margin-top: 0;
+    font-weight: 500;
+    animation: slidein 7s infinite;
+    animation-iteration-count: 1;
+} */
+
+h3 {
+    color: orange;
+    font-size: 2em;
+    margin: 0;
+    font-weight: 500;
+    /* animation: slidein 7s infinite;
+    animation-iteration-count: 1; */
+}
+
+
+img {
+    border-radius: 3%;
+    /* box-shadow: 0 4px 6px 2px #d3d3d3; */
+    box-shadow: 0 4px 6px 2px #24292f;
+    width: 20em;
+    animation: reveal 7s initial;
+    animation-iteration-count: 1;
+    
+}
+    
+
+@media screen and (max-width: 1200px) {
+    
+    img {width: 16em;}
+    h1 {font-size: 4.7em;}
+    h2 {font-size: 2.35em;}
+    h3 {font-size: 1.7em;}
+}
+
+@media screen and (max-width: 900px) {
+    
+    img {width: 13em;}
+    h1 {font-size: 3em;}
+    h2 {font-size: 1.5em;}
+    h3 {font-size: 1.4em;}
+}
+
+
+@media screen and (max-width: 600px) {
+    .Titles{flex-grow: 0;}
+    .Picture {flex-grow: 0;}
+    /* img {width: 9em;} */
+    h1 {font-size: 2.4em;}
+    h2 {font-size: 1.4em;}
+    h3 {font-size: 1.2em;}
+}
+
+
+
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-5000px; }
+    20% { margin-left:-5000px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+
+

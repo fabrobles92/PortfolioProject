@@ -1,0 +1,42 @@
+.Button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.ButtonStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-color: #24292f;
+    border: 0.5px solid white;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 2em;
+    margin-top: 10px;
+    padding: 12px 20px;
+    transition: all 2s;
+}
+
+.ButtonStyle:hover {
+    background-color: #373e47;
+    color: rgba(255, 166, 0, 0.466);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    
+    .ButtonStyle {font-size: 1.6em;}
+}
+
+@media screen and (max-width: 900px) {
+    
+    .ButtonStyle {font-size: 1.2em;}
+}
+
+
+@media screen and (max-width: 600px) {
+    .ButtonStyle {font-size: 1em;}
+}
+

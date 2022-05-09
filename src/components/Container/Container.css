@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    min-height: inherit;
+    
+}
+
+.layout {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    min-height: inherit;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    
+}
+
+
+
+@media (min-width: 1200px){
+    .layout {max-width: 1200px;}
+}
+
+/* @media (min-height: 1020px){
+    .layout {max-height: 1020px;}
+} */
+
+
+@media screen and (max-width: 600px) {
+    /* .layout {
+        flex-flow: column-reverse;;
+        justify-content: center;
+        text-align: center;
+    } */
+}

@@ -1,0 +1,11 @@
+.ProjectsLayout {
+    width: 100%;
+    margin: 40px 0;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(14rem, 16.75rem)); */
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+
