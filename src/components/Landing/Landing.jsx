@@ -13,7 +13,9 @@ export default function Landing() {
             <H2 style={{color: '#aaa'}}>
                 | Full Stack Developer | Python Developer |
             </H2>
-            <Button>More about me</Button>
+            <a href='/about'>
+              <Button>More about me</Button>
+            </a>
         </div>
 
     </Container>

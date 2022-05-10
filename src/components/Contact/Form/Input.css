@@ -6,7 +6,7 @@
 }
 
 .label{
-    color: orange;
+    color: #aaa;
     font-size: 16px;
     font-family: sans-serif;
     margin-bottom: 5px;
@@ -45,5 +45,6 @@ input, textarea {
 
 @media screen and (max-width: 600px) {
     input, textarea {font-size: 0.9em;}
+    .field {margin: 0; text-align: center;}
 }
 

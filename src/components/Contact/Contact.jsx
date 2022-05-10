@@ -123,8 +123,9 @@ function Contact() {
                 {contactOptions.map((option) => (
                 <Option key={option.contact} classes={option.className} icon={option.icon} contact={option.contact}/>          
                 ))}            
-            </div>
+            </div>            
             <div className='ContactFormLayout'>
+              <H2 style={{color: 'orange'}}>Send me an Email</H2>
               <Formik
               initialValues={{name: '', email: '', message: ''}}
               onSubmit={handleSubmit}
