@@ -58,27 +58,35 @@ function Contact() {
   }, [state])
 
   const handleSubmit = async (values, {resetForm}) => {
-    try{
-      const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+    // try{
+      // const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Accept': 'application/json',
+      //     'Content-type': 'application/json; charset=UTF-8'
+      //   },
+      //   body: JSON.stringify({title: 'foo', body: 'bar', userId: 1,})
+      // }
+      // console.log('form values',values)
+      const response = await fetch('/api/sendemail', {
         method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-type': 'application/json; charset=UTF-8'
-        },
-        body: JSON.stringify({title: 'foo', body: 'bar', userId: 1,})
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(values)
       }
       )
-      if(!response.ok){
-        throw new Error(response.status.toString());
-      }
+
       const data = await response.json()
+      if(!data){
+        // throw new Error(response.status.toString());
+        return setState(false)
+      }
       setState(true)
       resetForm()
       console.log('Response:', data)
-    }catch(Exception){
-      console.log(Exception)
-      setState(false)
-    }
+    // }catch(Exception){
+    //   console.log(Exception)
+    //   setState(false)
+    // }
       
   }
 
@@ -106,7 +114,7 @@ function Contact() {
   }
 
   const handleClose = (event, reason) => {
-    console.log(reason)
+    // console.log(reason)
     if (reason === 'clickaway') {
       return;
     }
@@ -114,7 +122,7 @@ function Contact() {
     setState(null);
   };
 
-  console.log({state})
+  // console.log({state})
   return (
     <Container>
         <div className='LayoutContact'>
